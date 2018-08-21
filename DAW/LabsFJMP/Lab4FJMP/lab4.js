@@ -43,14 +43,14 @@ function ejer2(){
     alert(msg);
 }
 
-//Contar coincidencias !!!Revisar array.lenght
+//Contar coincidencias !!!
 function ejer3(array){
     let negat=0;
     let zero=0;
     let pos=0;
     let msg = "El arreglo es: "+array;
     alert(msg);
-    for(let i=0;i<array.lenght;i++){
+    for(let i=0;i<array.length;i++){
         if(array[i]<0){
           negat++;
         }else if(array[i]==0){
