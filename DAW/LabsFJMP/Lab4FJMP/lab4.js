@@ -33,7 +33,7 @@ function ejer2(){
   msg = msg + rand2 + ' es:';
   let boton = prompt(msg);
   let timeF = Date.now()
-  let time = timeF - timeI;
+  let time = (timeF - timeI)/1000;
   let result = rand1 + rand2;
     if(boton == result){
       msg = "El resultado es correcto y tardaste "+time+" segundos";
