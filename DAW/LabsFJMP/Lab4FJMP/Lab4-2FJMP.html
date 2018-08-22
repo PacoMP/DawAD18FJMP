@@ -14,8 +14,7 @@
       <ul>
         <!--Table for "button" look in nav-->
             <li><a href="#intro">Introducción</a></li>
-            <li><a href="#preguntas">Preguntas</a></li>
-            <li><a href="#tech">Tecnologías</a></li>
+            <li><a href="#laboratorios">Laboratorios</a></li>
             <li><a href="#ref">Referencias</a></li>
       </ul>
     </nav>
@@ -52,8 +51,8 @@
     </section>
 
     <section>
-      <div id="preguntas">
-        <h1>Preguntas Lab 1</h1>
+      <div id="laboratorios">
+        <h1>Laboratorio 1</h1>
         <p>
           <strong>¿Cuál es la diferencia entre Internet y la World Wide Web?</strong><br>
             Internet es una red de redes que permite la interconexión entre computadoras y dispositivos.<br>
@@ -120,7 +119,33 @@
             Es un enfoque or fases ara el análisis y diseño, pretende que los sitemas se desarrollen mejor utilizando un ciclo específico del desarrolaldor y el usuario.Comprende solo la fase de desarrollo del sistema.<br/>
         </p>
 
-        <h1>Preguntas Lab3</h1>
+        <div id="tech">
+          <h1>Tecnologías</h1>
+          <ul>
+            <li><strong>URL:</strong>Uniform Resource Locator, es un estándar que permite denominar recursos dentro de internet para ser localizados.</li>
+            <li><strong>MIME:</strong>Multipurpose internet Email Extensions son una serie de especificaicones dirigidad al intercambio de información a través de internet.</li>
+            <li><strong>Errores en HTTP:</strong>
+              <ul>
+                <li>1xx:Resouestas informativas</li>
+                <li>2xx:Peticiones correctas</li>
+                <li>3xx:Redirecciones</li>
+                <li>4xx:Errorres del cliente</li>
+                <li>5xx:Error del servidor</li>
+              </ul>
+
+            </li>
+            <li><strong>XML:</strong>eXtensible Markup Language, es un meta lenguaje, es un meta-lenguaje que permite definir lenguaje de marcas W3C utilizando infromación<br>
+                                de forma legible. Permite estructurar documentos grandes y da soporte  abases de datos.</li>
+            <li><strong>XHTML:</strong>eXtenible Typertext Markuk Language, es casi idéntico a HTML, sin embargo es más estrico y es una aplicación de XML.</li>
+            <li><strong>HTML5:</strong>Hypertext Markup Language, version 5, es la última versión del lenguaje básico de WWW. Específica las variantes de sintáxis de HTML. </li>
+            <li><strong>JS:</strong>JavaScript,Es un lenguaje de programación interpretado, orientado a objetos. Se utiliza principalmente para desarrollar interfaces web. </li>
+            <li><strong>PHP:</strong>Hypertexr Preprocessor, es un lenguaje de programación utilizado del lado del servidor para el desarrollo web con contenido dinámico.</li>
+            <li><strong>JSP:</strong>JavaServer Pages,es una tecnología para apoyar a los desarrolladores a crear páginas web dinámicas utilizando Java como lenguaje.</li>
+            <li><strong>AJAX:</strong>Asynchronous Javascript and XML,es una técnica de desarrollo web para crear aplicaciones interactivas que se ejecutan de forma asícrona entre el cliente y el servidor.</li>
+          </ul>
+        </div>
+
+        <h1>Laboratorio 3</h1>
           <p>
             <strong>Como ingeniero de software ¿cuál es tu recomendación sobre el uso de !important en un CSS?</strong><br>
               Solo usarlo cuando se desea que un elemento tenga prioridad sobre todo lo demás, sin mebagro debe tenerse cudiado ya que podría generar problemas con el diseño general de la página.<br><br>
@@ -137,7 +162,7 @@
 
           </p>
 
-        <h1>Preguntas Lab4</h1>
+        <h1>Laboratorio 4</h1>
           <p>
             <strong>¿Qué diferencias y semejanzas hay entre Java y JavaScript?</strong><br>
               Son 2 cosas totalmetne distintas, lo único que tienen en común es el nombre.<br><br>
@@ -158,47 +183,26 @@
               Se podría utilziar cuadno... <br><br>
           </p>
 
-          <form>
-            <div align="center">
-              <button onclick="ejer1()">Ejercicio1</button>
-              <button onclick="ejer2()">Ejercicio2</button>
-              <button onclick="ejer3(array)">Ejercicio3</button>
-              <button onclick="ejer4(matrix)">Ejercicio4</button>
-              <button onclick="exeEjer5()">Ejercicio5</button>
-            </div>
-          </form>
-
-          <!--<div id="js"></div>-->
+          <div id="EjL4">
+            <h2>Ejercicios Lab 4</h2>
+            <form>
+              <div align="center">
+                <button onclick="ejer1()">Ejercicio1</button>
+                <button onclick="ejer2()">Ejercicio2</button>
+                <button onclick="ejer3(array)">Ejercicio3</button>
+                <button onclick="ejer4(matrix)">Ejercicio4</button>
+                <button onclick="exeEjer5()">Ejercicio5</button>
+                <button onclick="drawFract({x: 0, y:400},{x:200, y:0},  {x:400, y:400}, 6)">Ejercicio6</button>
+              </div>
+            </form>
+          </div>
 
       </div>
     </section>
 
-    <section>
-      <div id="tech">
-        <h1>Tecnologías</h1>
-        <ul>
-          <li><strong>URL:</strong>Uniform Resource Locator, es un estándar que permite denominar recursos dentro de internet para ser localizados.</li>
-          <li><strong>MIME:</strong>Multipurpose internet Email Extensions son una serie de especificaicones dirigidad al intercambio de información a través de internet.</li>
-          <li><strong>Errores en HTTP:</strong>
-            <ul>
-              <li>1xx:Resouestas informativas</li>
-              <li>2xx:Peticiones correctas</li>
-              <li>3xx:Redirecciones</li>
-              <li>4xx:Errorres del cliente</li>
-              <li>5xx:Error del servidor</li>
-            </ul>
+    <canvas id="Canvas" width="300" height="300" allign="center"></canvas>
 
-          </li>
-          <li><strong>XML:</strong>eXtensible Markup Language, es un meta lenguaje, es un meta-lenguaje que permite definir lenguaje de marcas W3C utilizando infromación<br>
-                              de forma legible. Permite estructurar documentos grandes y da soporte  abases de datos.</li>
-          <li><strong>XHTML:</strong>eXtenible Typertext Markuk Language, es casi idéntico a HTML, sin embargo es más estrico y es una aplicación de XML.</li>
-          <li><strong>HTML5:</strong>Hypertext Markup Language, version 5, es la última versión del lenguaje básico de WWW. Específica las variantes de sintáxis de HTML. </li>
-          <li><strong>JS:</strong>JavaScript,Es un lenguaje de programación interpretado, orientado a objetos. Se utiliza principalmente para desarrollar interfaces web. </li>
-          <li><strong>PHP:</strong>Hypertexr Preprocessor, es un lenguaje de programación utilizado del lado del servidor para el desarrollo web con contenido dinámico.</li>
-          <li><strong>JSP:</strong>JavaServer Pages,es una tecnología para apoyar a los desarrolladores a crear páginas web dinámicas utilizando Java como lenguaje.</li>
-          <li><strong>AJAX:</strong>Asynchronous Javascript and XML,es una técnica de desarrollo web para crear aplicaciones interactivas que se ejecutan de forma asícrona entre el cliente y el servidor.</li>
-        </ul>
-      </div>
+    <section>
     </section>
 
     <section>
