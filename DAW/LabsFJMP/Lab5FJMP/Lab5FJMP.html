@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <title>Laboratorio 1</title>
+        <meta charset="utf-8"/>
+        <!--estilos -->
+        <link rel="stylesheet" type="text/css" href="./Lab2Style.css" />
+  </head>
+
+  <body>
+    <div class="wrapper">
+    <!--Herramientas de navegación, ligas a secciones de la página-->
+    <nav>
+      <ul>
+        <!--Table for "button" look in nav-->
+            <li><a href="#formstyle">Suscríbete</a></li>
+            <li><a href="#preguntas">Preguntas</a></li>
+            <li><a href="#products">Tienda</a></li>
+            <li><a href="#ref">Referencias</a></li>
+      </ul>
+    </nav>
+
+    <!--Título y encabezado-->
+    <header>
+      <img src="./quasartech.jpg" alt="logo" class="center"/>
+      <h3>Por Paco Marín, Quasartech</h3>
+      <h3>Mat: A01207776,Contacto: A01207776@itesm.mx</h3>
+    </header>
+
+    <!--Barra lateral, para registro de usuarios-->
+    <aside >
+      <!--Suscribe fields-->
+
+      <div id="log">
+        <h2>Log In</h2>
+        <input type="text" name="user" placeholder="User"><br>
+        <input id="password" type="password" name="Password" placeholder="Password"><br>
+        <input id="passconfirm" type="password" name="ConfPass" placeholder="Confirm Password"><br>
+        <button onclick="validatePass()">Submit</button>
+
+      </div>
+
+    </aside>
+
+    <section>
+      <div id="intro">
+        <h1>Laboratorio 5</h1>
+      </div>
+    </section>
+
+    <section>
+      <div id="preguntas">
+        <p>
+          <h2>Preguntas</h2>
+          <strong>¿Por qué es una buena práctica usar JavaScript para checar que sean válidos los inputs de las formas antes de enviar los datos al servidor?</strong><br>
+            Para corrobar que los datos sean como los esperar y no tengas probelmas al manejarlos.<br><br>
+
+          <strong>¿Cómo puedes saltarte la seguridad de validaciones hechas con JavaScript?</strong><br>
+            Deshabilitando JS desde el navegador.<br><br>
+
+          <strong>Si te puedes saltar la seguridad de las validaciones de JavaScript, entonces ¿por qué la primera pregunta dice que es una buena práctica?</strong><br>
+            Es buena práctica para revisar los datos, pero si los deshabilitas el servidor va a rechazar la información.<br><br>
+        </p>
+      </div>
+    </section>
+
+    <section>
+
+        <div id="products" align="center">
+          <h2 align="left">Tienda</h2>
+          <table >
+            <tr>
+              <th class="thimg"><div><img id="phone" src="https://s-media-cache-ak0.pinimg.com/736x/16/ee/8c/16ee8c9c4181973ae4969875e60616d1--iphone--concept-tech-toys.jpg" alt="iphoneX" class="imgtable"/></th>
+              <th class="thimg"><img id="nintendo" src="https://orig04.deviantart.net/fc23/f/2011/059/4/7/nintendo_handheld_concept_by_xyrten-d3amh6k.jpg" alt="NintX" class="imgtable"/></th>
+              <th class="thimg"><img id="watch" src="https://cdn.dribbble.com/users/365848/screenshots/1528767/equi_1x.png" alt="iWatchX" class="imgtable"/></th>
+            </tr>
+            <tr>
+              <th>Cantidad: <input id="fphoneq" type="number" value= "0" name="quantity"  min="0" max="10" oninput="calculate()"></th>
+              <th>Cantidad: <input id="fnintendoq" type="number" value= "0" name="quantity1"  min="0" max="10" oninput="calculate()"></th>
+              <th>Cantidad: <input id="fwatchq" type="number" value= "0" name="quantity1"  min="0" max="10" oninput="calculate()"></th>
+            </tr>
+            <tr>
+              <th></th>
+              <th>Total <input id="total" type="text" value= "0" name="total"></th>
+              <th>IVA <input id="iva" type="text" value= "0" name="iva"></th>
+            </tr>
+          </table>
+        </div>
+    </section>
+
+    <section>
+      <div id="ref">
+        <h3>Referencias</h3>
+          <p>
+          Resources for developers, by developers. (n.d.). Retrieved from https://developer.mozilla.org/en-US/ <br><br>
+
+          Programación en Internet. (n.d.).<br>
+          Retrieved from https://blogs.ua.es/pi/2011/01/17/¿cuales-son-las-diferencias-entre-html4-xhtml-1-0-y-html5/<br><br>
+
+          Ceballos, M. B. (2015, July 20). Ciclo de vida de un sistema de información. Retrieved from<br>
+          https://www.gestiopolis.com/ciclo-de-vida-de-un-sistema-de-informacion/<br><br>
+         </p>
+      </div>
+    </section>
+
+
+      <form action="/quasarform.php" method="post">
+          <h3>Subscribete a nuestros memorandum</h3>
+        <div class="container" style="background-color:white">
+            <input class="formtext" type="text" placeholder="Name" name="name" required>
+            <input class="formtext" type="text" placeholder="Email address" name="email" required>
+        </div>
+
+        <div class="container">
+          <input type="submit" value="Subscribe">
+        </div>
+      </form>
+    
+
+      <footer>
+      <a href="https://atom.io/" target="_blank">
+        Editor Atom
+      </a>
+      </footer>
+    </div>
+
+    <script src = "lab5.js"></script>
+  </body>
+</html>
