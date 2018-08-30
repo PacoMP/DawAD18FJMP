@@ -4,7 +4,7 @@
     <title>Laboratorio 1</title>
         <meta charset="utf-8"/>
         <!--estilos -->
-        <link rel="stylesheet" type="text/css" href="./Lab2Style.css" />
+        <link rel="stylesheet" type="text/css" href="./MinimizedLab6Style.css" />
   </head>
 
   <body>
@@ -23,25 +23,28 @@
     <!--Título y encabezado-->
     <header>
       <img src="./quasartech.jpg" alt="logo" class="center"/>
-      <h3>Por Paco Marín, Quasartech</h3>
-      <h3>Mat: A01207776,Contacto: A01207776@itesm.mx</h3>
+      <h3 id="title2">Por Paco Marín, Quasartech</h3>
+      <h3 id="title3">Mat: A01207776,Contacto: A01207776@itesm.mx</h3>
     </header>
 
     <!--Barra lateral, para registro de usuarios-->
     <aside >
       <!--Suscribe fields-->
-
       <div id="log">
         <h2>Log In</h2>
         <input type="text" name="user" placeholder="User"><br>
         <input id="password" type="password" name="Password" placeholder="Password"><br>
         <input id="passconfirm" type="password" name="ConfPass" placeholder="Confirm Password"><br>
-        <button onclick="validatePass()">Submit</button>
-
+        <button onclick="validatePass()">Submit</button><br>
+        <span id="tooltip1" class="tooltip">La contraseña debe tener una mayuscula,un número y un carater raro.</span>
       </div>
 
-    </aside>
+      <div class="dragdiv" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+      <br>
+      <img id="drag1" class="drag1" src="GoldenKey.jpg" draggable="true" ondragstart="drag(event)">
 
+    </aside>
+  <div id="bodyVisibility">
     <section>
       <div id="intro">
         <h1>Laboratorio 5</h1>
@@ -52,14 +55,25 @@
       <div id="preguntas">
         <p>
           <h2>Preguntas</h2>
-          <strong>¿Por qué es una buena práctica usar JavaScript para checar que sean válidos los inputs de las formas antes de enviar los datos al servidor?</strong><br>
-            Para corrobar que los datos sean como los esperar y no tengas probelmas al manejarlos.<br><br>
+          <strong>¿Cuáles son las diferencias entre los posibles valores de la propiedad position?</strong><br>
+            <ul>
+              <li>Static: </li>
+              <li>Relative: Permite que un elemento se desplace respecto a lo que hubiera sido su posición normal.</li>
+              <li>Absolute: permite que un elemento se desplace respecto al origen de coordenadas del primer elemento contenedor posicionado
+                ó respecto a la esquina superior izquierda de la ventana de visualización.</li>
+              <li>Fixed: Permite fijar un elemento en una posición respecto al origen de coordenadas del primer elemento
+                contenedor posicionado ó respecto a la esquina superior de la ventana de visualización.</li>
+              <li>Inherit: Se heredan las características del elemento padre.</li>
+            </ul>
 
-          <strong>¿Cómo puedes saltarte la seguridad de validaciones hechas con JavaScript?</strong><br>
-            Deshabilitando JS desde el navegador.<br><br>
+          <strong>¿Cuáles son los valores estándar para la propiedad visibility?</strong><br>
+            <ul>
+              <li>Hiden</li>
+              <li>Visible</li>
+            </ul>
 
-          <strong>Si te puedes saltar la seguridad de las validaciones de JavaScript, entonces ¿por qué la primera pregunta dice que es una buena práctica?</strong><br>
-            Es buena práctica para revisar los datos, pero si los deshabilitas el servidor va a rechazar la información.<br><br>
+          <strong>¿Qué es el zIndex y para qué sirve?</strong><br>
+            Específica el orden de u elemento: al frente, al fondo.<br><br>
         </p>
       </div>
     </section>
@@ -70,9 +84,9 @@
           <h2 align="left">Tienda</h2>
           <table >
             <tr>
-              <th class="thimg"><div><img id="phone" src="https://s-media-cache-ak0.pinimg.com/736x/16/ee/8c/16ee8c9c4181973ae4969875e60616d1--iphone--concept-tech-toys.jpg" alt="iphoneX" class="imgtable"/></th>
-              <th class="thimg"><img id="nintendo" src="https://orig04.deviantart.net/fc23/f/2011/059/4/7/nintendo_handheld_concept_by_xyrten-d3amh6k.jpg" alt="NintX" class="imgtable"/></th>
-              <th class="thimg"><img id="watch" src="https://cdn.dribbble.com/users/365848/screenshots/1528767/equi_1x.png" alt="iWatchX" class="imgtable"/></th>
+              <th><div class="module mid"><h2>$1000</h2></th>
+              <th><div class="module1 mid"><h2>$400</h2></th>
+              <th><div class="module2 mid"><h2>$250</h2></th>
             </tr>
             <tr>
               <th>Cantidad: <input id="fphoneq" type="number" value= "0" name="quantity"  min="0" max="10" oninput="calculate()"></th>
@@ -84,7 +98,11 @@
               <th>Total <input id="total" type="text" value= "0" name="total"></th>
               <th>IVA <input id="iva" type="text" value= "0" name="iva"></th>
             </tr>
+            <th>
+            <th><button onclick="setInterval(SendRequest(),5000)">Ordenar</button></th>
+            </tr>
           </table>
+          <p id="request" class="requestForm"></p>
         </div>
     </section>
 
@@ -102,20 +120,7 @@
          </p>
       </div>
     </section>
-
-
-      <!--form action="/quasarform.php" method="post"-->
-          <h3>Subscribete a nuestros memorandum</h3>
-        <div class="container" style="background-color:white">
-            <input class="formtext" type="text" placeholder="Name" name="name" required>
-            <input class="formtext" type="text" placeholder="Email address" name="email" required>
-        </div>
-
-        <div class="container">
-          <input type="submit" value="Subscribe">
-        </div>
-      <!--/form-->
-
+  </div>
 
       <footer>
       <a href="https://atom.io/" target="_blank">
@@ -124,6 +129,6 @@
       </footer>
     </div>
 
-    <script src = "lab5.js"></script>
+    <script src = "lab6.js"></script>
   </body>
 </html>

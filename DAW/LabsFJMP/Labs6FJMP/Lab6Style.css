@@ -1,0 +1,223 @@
+
+body{
+  font-family: Arial;
+  font-size: 12pt;
+  color: #000000;
+  background-color: #FFFFFF;
+  margin: 0pt;
+}
+
+.wrapper{
+  width: 80%;
+  margin: 10pt auto;
+  padding-left: 100pt;
+  padding-right: 100pt;
+}
+
+nav ul{
+  text-align:left;
+  list-style-type:none;
+  background-color: #FFFFFF;
+  padding:0pt;
+  border-top:2px solid #000000;
+  margin: 0px 0px 0px 0px;
+}
+
+/*list style*/
+nav li{
+  display: inline-block;
+  background-color: #FFFFFF;
+  margin-right:0px;
+  padding: 10px 0px;
+}
+
+/*square effect*/
+nav a:hover,nav li:hover{
+  background-color: #000000;
+  color:#FFFFFF;
+}
+
+/*list link content*/
+nav a{
+  font-family: georgia;
+  text-decoration: none;
+  color: #000000;
+  font-size: 12pt;
+  padding: 10px 20px;
+  margin:0px;
+}
+
+header{
+    border-top: 2.5px solid #000000;
+    border-bottom: 5px solid #000000;
+}
+
+header h3{
+  font-size: 150%;
+  color: #9c1d1d;
+  text-align:  center;
+  margin: 0px 0px 10px 0px;
+  font-family: Gill Sans Extrabold;
+}
+
+aside{
+  font-family: Arial;
+  float:right;
+  margin-bottom: 100%;
+}
+aside h2{
+  margin-bottom: 0px;
+}
+
+input[type=text] {
+  width: 110px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 12px;
+  background-color: white;
+  margin-top: 0px;
+}
+
+input[type=password] {
+  width: 110px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 12px;
+  background-color: white;
+  margin-top: 0px;
+}
+
+input[type=number] {
+  width: 65px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 12px;
+  background-color: white;
+  margin-top: 0px;
+}
+
+
+img.center{
+  display: block;
+  margin: 0px auto;
+}
+
+table.center{
+  align: center;
+}
+
+div.formstyle{
+  padding-left: 100pt;
+  display: block;
+  text-align: center;
+}
+
+form {
+    border: 3px solid #f1f1f1;
+    font-family: Arial;
+    width: 80%;
+}
+
+.container {
+    width: 80%;
+    margin-left: 70pt;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+}
+
+.requestForm{
+  allign:center.
+  visibility:hidden;
+}
+
+.dragdiv {
+    width: 170px;
+    height: 70px;
+    padding: 10px;
+    border: 1px solid #aaaaaa;
+}
+
+img.drag1{
+  width: 168px;
+  height: 69px;
+}
+
+#bodyVisibility{
+  visibility: hidden;
+}
+
+.module {
+  background:
+    linear-gradient(
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.2)
+    ),
+    url(https://s-media-cache-ak0.pinimg.com/736x/16/ee/8c/16ee8c9c4181973ae4969875e60616d1--iphone--concept-tech-toys.jpg);
+  background-size: cover;
+  width: 200px;
+  height: 200px;
+  margin: 0;
+  position: relative;
+  float: left;
+}
+
+.module1 {
+  background:
+    linear-gradient(
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.2)
+    ),
+    url(https://orig04.deviantart.net/fc23/f/2011/059/4/7/nintendo_handheld_concept_by_xyrten-d3amh6k.jpg);
+  background-size: cover;
+  width: 200px;
+  height: 200px;
+  margin: 0;
+  position: relative;
+  float: left;
+}
+
+.module2 {
+  background:
+    linear-gradient(
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.2)
+    ),
+    url(https://cdn.dribbble.com/users/365848/screenshots/1528767/equi_1x.png);
+  background-size: cover;
+  width: 200px;
+  height: 200px;
+  margin: 0;
+  position: relative;
+  float: left;
+}
+
+.mid h2 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 200;
+  color: white;
+  text-transform: uppercase;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 20;
+  transform: translate(-50%, -50%);
+}
