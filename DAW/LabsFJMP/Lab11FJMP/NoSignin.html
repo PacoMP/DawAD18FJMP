@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+  <link type="text/css" rel="stylesheet" href="css/main.css" />
+  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BandApp</title>
+</head>
+
+<body id="home" class="scrollspy">
+  <div class="navbar-fixed">
+    <nav class="teal darken-3">
+      <div class="container">
+        <div class="nav-wrapper">
+          <a href="index.php" class="brand-logo">BandApp</a>
+          <a href="#" data-activates="mobile-nav" class="button-collapse">
+            <i class="material-icons">menu</i>
+          </a>
+          <ul class="right hide-on-med-and-down">
+            <li>
+              <a href="#">Lugares</a>
+            </li>
+            <li>
+              <a href="#">Proveedores</a>
+            </li>
+            <li>
+              <a href="#login-modal" class="btn teal modal-trigger">Iniciar Sesion</a>
+            </li>
+            <li>
+              <a href="https://facebook.com"><i class="fab fa-facebook"></i></a>
+            </li>
+            <li>
+              <a href="https://twitter.com"><i class="fab fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href="https://instagram.com"><i class="fab fa-instagram"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <ul class="side-nav" id="mobile-nav">
+    <li>
+      <a href="#home">Eventos</a>
+    </li>
+    <li>
+      <a href="#popular">Artistas</a>
+    </li>
+    <li>
+      <a href="#signup-modal">Registrarte</a>
+    </li>
+    <li>
+      <a href="#login-modal">Iniciar Sesion</a>
+    </li>
+  </ul>
+
+  <!-- Section: Slider -->
+  <section class="slider">
+    <ul class="slides">
+      <li>
+        <img src="img/resort1.jpg" alt="">
+        <div class="caption center-align">
+          <h2>Encuentra un artista</h2>
+          <h5 class="light grey-text text-lighten-3 hide-on-small-only">Organiza tu evento!</h5>
+          <a href="#" class="btn btn-large teal darken-3">Ver Mas</a>
+        </div>
+      </li>
+      <li>
+        <img src="img/resort2.jpg" alt="">
+        <div class="caption left-align">
+          <h2>Encuentra donde tocar</h2>
+          <h5 class="light grey-text text-lighten-3 hide-on-small-only">Busca eventos y lugares donde sacarle provecho a tu evento</h5>
+          <a href="#" class="btn btn-large teal darken-3">Ver Mas</a>
+        </div>
+      </li>
+      <li>
+        <img src="img/resort3.jpg" alt="">
+        <div class="caption right-align">
+          <h2>Hazlo con total seguridad</h2>
+          <h5 class="light grey-text text-lighten-3 hide-on-small-only">Tu Pago garantizado y oportunidad de dejar resena de como te parecio</h5>
+          <a href="#" class="btn btn-large teal darken-3">Ver Mas</a>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+
+  <!-- Section: Search -->
+  <section id="search" class="section section-search teal darken-3 white-text center scrollspy">
+    <div class="container">
+      <div class="row">
+        <div class="col s12">
+          <h3>Busca tu ciudad</h3>
+          <div class="input-field">
+            <input class="white grey-text autocomplete" placeholder="Guadalajara, Monterrey, Queretaro, etc..." type="text" id="autocomplete-input">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section: Popular -->
+  <section id="eventos" class="section section-popular scrollspy">
+    <div class="container">
+      <div class="row">
+        <h4 class="center">
+          <span class="teal-text">Eventos</span> Populares</h4>
+        <div class="col s12 m4">
+          <div class="card">
+            <div class="card-image">
+              <img src="img/z.jpg" alt="">
+              <span class="card-title">Xalapa, Veracruz</span>
+            </div>
+            <div class="card-content">
+              <p>Evento a realizarse en, fecha y hora del evento son, La cantidad y el presupuesto para el evento son, cantidad de personas esperadas
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m4">
+          <div class="card">
+            <div class="card-image">
+              <img src="img/resort1.jpg" alt="">
+              <span class="card-title">Zapopan, Jalisco</span>
+            </div>
+            <div class="card-content">
+              <p>Evento a realizarse en, fecha y hora del evento son, La cantidad y el presupuesto para el evento son, cantida de personas esperadas
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m4">
+          <div class="card">
+            <div class="card-image">
+              <img src="img/x.jpg" alt="">
+              <span class="card-title">Acapulco, Guerrero</span>
+            </div>
+            <div class="card-content">
+              <p>Evento a realizarse en, fecha y hora del evento son, La cantidad y el presupuesto para el evento son, cantida de personas esperadas
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+<!--
+      <div class="row">
+        <div class="col s12 center">
+          <a href="#contact" class="btn btn-large grey darken-3">
+            <i class="material-icons left">play_arrow</i> Click para mayor info
+          </a>
+        </div>
+      </div>
+-->
+    </div>
+  </section>
+
+<!-- Section: Popular -->
+  <section id="artistas" class="section section-popular scrollspy">
+    <div class="container">
+      <div class="row">
+        <h4 class="center">
+          <span class="teal-text">Artistas</span> Destacados</h4>
+        <div class="col s12 m4">
+          <div class="card">
+            <div class="card-image">
+              <img src="img/d.jpg" alt="">
+              <span class="card-title">Banda de Rock</span>
+            </div>
+            <div class="card-content">
+              <p>Artista que .. Tarifa por hora . .Disponibilidad en dias .. Habilidad en..
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m4">
+          <div class="card">
+            <div class="card-image">
+              <img src="img/b.jpg" alt="">
+              <span class="card-title">Dj Equis</span>
+            </div>
+            <div class="card-content">
+              <p>Artista que .. Tarifa por hora . .Disponibilidad en dias .. Habilidad en..
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m4">
+          <div class="card">
+            <div class="card-image">
+              <img src="img/e.jpg" alt="">
+              <span class="card-title">Bailarines</span>
+            </div>
+            <div class="card-content">
+              <p>Artista que .. Tarifa por hora . .Disponibilidad en dias .. Habilidad en..
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+<!--
+      <div class="row">
+        <div class="col s12 center">
+          <a href="#contact" class="btn btn-large grey darken-3">
+            <i class="material-icons left">play_arrow</i> Click para mayor info
+          </a>
+        </div>
+      </div>
+-->
+    </div>
+  </section>
+
+
+
+
+
+<!-- Login Modal -->
+ <div id="login-modal" class="modal">
+    <div class="modal-content">
+      <h4>Iniciar Sesion</h4>
+      <p>Autenticate para acceder a tu cuenta</p>
+      <form action="index.php" method = "POST">
+        <div class="input-field">
+          <input type="email" id="email1" name="email">
+          <label for="email">Email</label>
+        </div>
+        <div class="input-field">
+          <input type="password" id="password1" name="password">
+          <label for="password">Contrasena</label>
+        </div>
+    </div>
+    <div class="modal-footer">
+      <a href="#signup-modal" class="modal-trigger btn teal darken-3">
+        <i class="fa fa-briefcase"></i> Registrarte</a>
+      <a href="#!" class="modal-action modal-close btn grey">
+        <i class="fa fa-sync"></i> Cambiar Password</a>
+        <button type="submit" class="modal-action modal-close btn teal darken-3 ">
+          <i class="fa fa-lock"></i> Iniciar Sesión
+        </button>
+    </div>
+    </form>
+  </div>
+
+
+<!-- Signup Modal -->
+ <div id="signup-modal" class="modal">
+    <div class="modal-content">
+      <h4>Registrate</h4>
+      <p>Crea tu cuenta para poder acceder a mas funcionalidades</p>
+      <form>
+        <div class="input-field">
+          <input type="text" id="email">
+          <label for="email">Nombre</label>
+        </div>
+
+        <div class="input-field">
+          <input type="text" id="password2">
+          <label for="password">FechaNacimiento</label>
+        </div>
+        <div class="input-field">
+          <input type="email" id="email2">
+          <label for="email">Email</label>
+        </div>
+        <div class="input-field">
+          <input type="password" id="password3">
+          <label for="password">Contrasena</label>
+        </div>
+      </form>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-action modal-close btn grey">
+        <i class="fa fa-sync"></i> Editar</a>
+      <a href="#!" class="modal-action modal-close btn teal darken-3">
+        <i class="fa fa-lock"></i> Registrarte</a>
+    </div>
+  </div>

@@ -1,0 +1,65 @@
+
+  <!-- Section: Follow -->
+  <section class="section section-follow teal darken-3 white-text center">
+    <div class="container">
+      <div class="row">
+        <div class="col s12">
+          <h4>Sigue a BandApp</h4>
+          <p>Siguenos en nuestras redes sociales para ofertas especiales</p>
+          <a href="htttps://facebook.com" target="_blank" class="white-text">
+            <i class="fab fa-facebook fa-4x"></i>
+          </a>
+          <a href="htttps://twitter.com" target="_blank" class="white-text">
+            <i class="fab fa-twitter fa-4x"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!--Import jQuery before materialize.js-->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      // Init Side nav
+      $('.button-collapse').sideNav();
+
+      // Init Slider
+      $('.slider').slider({
+        indicators: false,
+        height: 500,
+        transition: 500,
+        interval: 6000
+      });
+
+      // Autocomplete
+      $('.autocomplete').autocomplete({
+        data: {
+          "Queretaro": null,
+          "Cancun": null,
+          "Monterrey": null,
+          "Guadalajara": null,
+          "Ciudad de Mexico": null,
+          "San Luis Potosi": null,
+          "Zacatecas": null,
+          "Tampaulipas": null,
+          "Acapulco": null,
+          "Puebla": null,
+          "Los Cabos": null,
+          "Veracruz": null,
+        }
+      });
+
+      // Init Scrollspy
+      $('.scrollspy').scrollSpy();
+
+
+      $('.modal').modal();
+
+    });
+  </script>
+
+</body>
+
+</html>
