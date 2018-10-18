@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+  <link type="text/css" rel="stylesheet" href="css/main.css" />
+        <link type="text/css" rel="stylesheet" href="HomePage.css">
+     <link type="text/css" rel="stylesheet" href="position.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BandApp</title>
+</head>
+
+<body id="home" class="scrollspy">
+  <div class="navbar-fixed">
+    <nav class="teal darken-3">
+      <div class="container">
+        <div class="nav-wrapper">
+          <a href="index.php" class="brand-logo">BandApp</a>
+          <a href="#" data-activates="mobile-nav" class="button-collapse">
+            <i class="material-icons">menu</i>
+          </a>
+          <ul class="right hide-on-med-and-down">
+            <li>
+              <a href="Eventos.html">Eventos</a>
+            </li>
+            <li>
+              <a href="Artistas.html">Artistas</a>
+            </li>
+            <li>
+              <a href="https://facebook.com"><i class="fab fa-facebook"></i></a>
+            </li>
+            <li>
+              <a href="https://twitter.com"><i class="fab fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href="https://instagram.com"><i class="fab fa-instagram"></i></a>
+            </li>
+            <li>
+              <a href="index.php">Cerrar Sesion</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+   <!--Barra que contienen la foto e infomracion del usuario, mail,nombre, video demo y perfil facebook-->
+    <div>
+        <div class="col s12 m8 offset-m2 l6 offset-l3">
+        <div class="card-panel grey lighten-5 z-depth-1">
+          <div class="row valign-wrapper">
+            <div class="col s2">
+              <img src="imagen/Eduardo.jpg" alt="Eduardo Rosado" class="circle responsive-img">
+              <form action="imgupload.php" method="POST" enctype="multipart/form-data">
+                 <div class="file-field input-field">
+                   <div class="btn">
+                     <span>IMG</span>
+                     <input type="file" name="imagen">
+                   </div>
+                   <div class="file-path-wrapper">
+                     <input class="file-path validate" type="text">
+                   </div>
+                   <input type="submit" class="waves-effect waves-light btn" value="Subir">
+                 </div>
+               </form>
+            </div>
+            <div class="col s10">
+             <p>a01206347@itesm.mx</p>
+            <p>Erwin Julian</p>
+            <a href="https://www.youtube.com/watch?v=I9cCPQVPv8o">Video demo</a><br>
+            <a href="https://www.facebook.com/">Perfil de Facebook</a>
+            </div>
+          </div>
+        </div>
+      </div>
+<!--Nav bar de perfil, que es artistas, lugares, eventos y orhanizadores, que seleeciona el usuario-->
+
+<section class="buttonContainer ">
+      <div class="container">
+        <div class="row">
+          <div class="col s12 offset-m1">
+            <a class="waves-effect waves-light btn-large #607d8b teal"><i class="material-icons left">person</i>Servicios que ofrece</a>
+            <a class="waves-effect waves-light btn-large #607d8b teal"><i class="material-icons left">attach_money</i>Tarifa estimada</a>
+            <a class="waves-effect waves-light btn-large #607d8b teal" href="Fotos.html"><i class="material-icons left " href="Fotos.html">perm_media</i >Galería de fotos</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    </div>
+    <!-- Seccion que marca lo que ofrece el usuario-->
+
+ <div class="container" >
+    <div class="derecha">
+    <!--Header_fijo me permite hacer el scroll en la tabla-->
+    <!--highlight me permite que al pasar el mouse se preseleccione dando un sombreado-->
+     <table class="header_fijo highlight">
+  <tr>
+    <th>Habilidades</th>
+  </tr>
+  <tr>
+    <td>Tocar guitarra</td>
+  </tr>
+  <tr>
+    <td>Dar Clases</td>
+  </tr>
+  <tr>
+    <td>Cantar trova</td>
+  </tr>
+
+</table>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+  <!--Import jQuery before materialize.js-->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="functionIncluir_Ofrece.js"></script>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      // Init Side nav
+      $('.button-collapse').sideNav();
+
+      // Init Slider
+      $('.slider').slider({
+        indicators: false,
+        height: 500,
+        transition: 500,
+        interval: 6000
+      });
+
+      // Autocomplete
+      $('.autocomplete').autocomplete({
+        data: {
+          "Queretaro": null,
+          "Cancun": null,
+          "Monterrey": null,
+          "Guadalajara": null,
+          "Ciudad de Mexico": null,
+          "San Luis Potosi": null,
+          "Zacatecas": null,
+          "Tampaulipas": null,
+          "Acapulco": null,
+          "Puebla": null,
+          "Los Cabos": null,
+          "Veracruz": null,
+        }
+      });
+
+      // Init Scrollspy
+      $('.scrollspy').scrollSpy();
+
+        // Show sections
+        $('.section').fadeIn();
+
+        // Hide preloader
+        $('.loader').fadeOut();
+
+        //Init Side nav
+        $('.button-collapse').sideNav();
+
+        // Init Modal
+        $('.modal').modal();
+
+        // Init Select
+        $('select').material_select();
+
+        CKEDITOR.replace('body');
+
+    });
+  </script>
+</body>
+
+</html>

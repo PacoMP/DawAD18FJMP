@@ -1,0 +1,90 @@
+<!-- Login Modal -->
+ <div id="login-modal" class="modal">
+    <div class="modal-content">
+      <h4>Iniciar Sesion</h4>
+      <p>Autenticate para acceder a tu cuenta</p>
+      <form action="index.php" method = "POST">
+        <div class="input-field">
+          <input type="email" id="email1" name="email" class="validate"required>
+          <label for="email">Email</label>
+        </div>
+        <div class="input-field">
+          <input type="password" id="password1" name="password" class="validate"required>
+          <label for="password">Contraseña</label>
+        </div>
+    </div>
+    <div class="modal-footer">
+      <a href="#signup-modal" class="modal-trigger btn teal darken-3">
+        <i class="fa fa-briefcase"></i> Registrarte</a>
+      <a href="#!" class="modal-action modal-close btn grey">
+        <i class="fa fa-sync"></i> Cambiar Password</a>
+        <button type="submit" action="login.php" class="modal-action modal-close btn teal darken-3 ">
+          <i class="fa fa-lock"></i> Iniciar Sesión
+        </button>
+    </div>
+    </form>
+  </div>
+
+
+<!-- Signup Modal -->
+ <div id="signup-modal" class="modal">
+    <div class="modal-content">
+      <h4>Registrate</h4>
+      <p>Crea tu cuenta para poder acceder a mas funcionalidades</p>
+      <form>
+        <div class="input-field">
+          <input type="text" id="email">
+          <label for="email">Nombre</label>
+        </div>
+
+        <div class="input-field">
+          <input type="text" id="password2">
+          <label for="password">FechaNacimiento</label>
+        </div>
+        <div class="input-field">
+          <input type="email" id="email2">
+          <label for="email">Email</label>
+        </div>
+        <div class="input-field">
+          <input type="password" id="password3">
+          <label for="password">Contrasena</label>
+        </div>
+      </form>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-action modal-close btn grey">
+        <i class="fa fa-sync"></i> Editar</a>
+      <a href="#!" class="modal-action modal-close btn teal darken-3">
+        <i class="fa fa-lock"></i> Registrarte</a>
+    </div>
+  </div>
+
+  <!-- Add Post Modal -->
+    <div id="post-modal" class="modal">
+      <div class="modal-content">
+        <h4>Agregar Evento</h4>
+        <form>
+          <div class="input-field">
+            <input type="text" id="title">
+            <label for="title">Titulo</label>
+          </div>
+          <div class="input-field">
+            <select>
+              <option value="" disabled selected>Selecciona una opcion</option>
+              <option value="1">Fiesta</option>
+              <option value="2">Concierto</option>
+              <option value="3">Reunión</option>
+              <option value="4">Graducacion</option>
+            </select>
+            <label>Categoria</label>
+          </div>
+          <div class="input-field">
+            <textarea name="body" id="body" class="materialize-textarea"></textarea>
+            <label for="body">Descripcion</label>
+          </div>
+        </form>
+        <div class="modal-footer">
+          <a href="#!" class="modal-action modal-close btn blue white-text">Submit</a>
+        </div>
+      </div>
+    </div>

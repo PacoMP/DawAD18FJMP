@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+  <link type="text/css" rel="stylesheet" href="css/main.css" />
+  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BandApp</title>
+</head>
+
+<body id="home" class="scrollspy">
+  <div class="navbar-fixed">
+    <nav class="teal darken-3">
+      <div class="container">
+        <div class="nav-wrapper">
+          <a href="index.php" class="brand-logo">BandApp</a>
+          <a href="#" data-activates="mobile-nav" class="button-collapse">
+            <i class="material-icons">menu</i>
+          </a>
+          <ul class="right hide-on-med-and-down">
+            <li>
+              <a id="eventos" href="#">Eventos</a>
+            </li>
+            <li>
+              <a id="artistas" href="#">Artistas</a>
+            </li>
+            <li>
+              <a href="#">Lugares</a>
+            </li>
+            <li>
+              <a href="#">Proveedores</a>
+            </li>
+            <li>
+              <a href="https://facebook.com"><i class="fab fa-facebook"></i></a>
+            </li>
+            <li>
+              <a href="https://twitter.com"><i class="fab fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href="https://instagram.com"><i class="fab fa-instagram"></i></a>
+            </li>
+            <?php if (isset($_SESSION["email"])):?>
+              <li>
+                <a href="MiPerfil.html">Mi Perfil</a>
+              </li>
+            <?php endif ?>
+            <li>
+              <?php if (isset($_SESSION["email"])): ?>
+                  <a href="logout.php">Cerrar Sesion</a>
+              <?php else: ?>
+                  <a href="#login-modal" class="btn teal modal-trigger">Iniciar Sesion</a>
+              <?php endif ?>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <ul class="side-nav" id="mobile-nav">
+    <li>
+      <a href="#home">Eventos</a>
+    </li>
+    <li>
+      <a href="#popular">Artistas</a>
+    </li>
+    <li>
+      <a href="#signup-modal">Registrarte</a>
+    </li>
+    <li>
+      <a href="#login-modal">Iniciar Sesion</a>
+    </li>
+  </ul>
+
+    <div id="content">
